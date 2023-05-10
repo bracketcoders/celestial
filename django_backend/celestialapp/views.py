@@ -1,18 +1,31 @@
-from celestialapp.models import Snippet
-from django.shortcuts import HttpResponse
-from django.http import JsonResponse
+from rest_framework.generics import ListAPIView
+from rest_framework.generics import CreateAPIView
+from rest_framework.generics import DestroyAPIView
+from rest_framework.generics import UpdateAPIView
 from celestialapp.serializers import SnippetSerializer
-from django.core import serializers
+from celestialapp.models import Snippet
 
 
-def home(request):
-    return HttpResponse("Status OK")
+# Create your views here.
+class ListSnippetAPIView(ListAPIView):
+    """This endpoint list all of the available Snippets from the database"""
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
 
 
-def getSnippets(request):
-    snippets = Snippet.objects.all()
-    data = serializers.serialize("json", snippets)
-    print(data)
+class CreateSnippetAPIView(CreateAPIView):
+    """This endpoint allows for creation of a Snippet"""
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
 
-    return JsonResponse(data, safe=False)
 
+class UpdateSnippetAPIView(UpdateAPIView):
+    """This endpoint allows for updating a specific Snippet by passing in the id of the Snippet to update"""
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
+
+
+class DeleteSnippetAPIView(DestroyAPIView):
+    """This endpoint allows for deletion of a specific Snippet from the database"""
+    queryset = Snippet.objects.all()
+    serializer_class = SnippetSerializer
