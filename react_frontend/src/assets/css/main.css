@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --color-primary: #6F38C5;
+    --color-secondary: #87A2FB;
+    --color-helper: #ADDDD0;
+    --color-light: #EEEEEE;
+    --color-dark: #181818;
+}
+
+.b-primary {
+    background: var(--color-primary);
+}   
