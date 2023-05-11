@@ -11,7 +11,7 @@ export default function Login() {
 
     return (
         <>
-            <div className="col-12 col-md-6 col-lg-4 p-4 m-auto">
+            <div className="col-12 col-md-6 col-lg-4 p-4 m-auto cover-space">
                 <h4 className="mb-3 text-center">Welcome!</h4>
                 <form className="col-12 login-form" onSubmit={handleSubmit}>
                     <div class="form-floating mb-3">

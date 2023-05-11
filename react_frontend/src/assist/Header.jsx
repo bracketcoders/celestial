@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const [darkThemeState, setDarkThemeState] = useState(localStorage.getItem('dark-theme'));
@@ -22,9 +23,15 @@ export default function Header() {
             <header className="p-3 header">
                 <div className="container d-flex justify-content-between align-items-center">
                     <div className="logo">
-                        <h4 className="mb-0">Celestial</h4>
+                        <Link to={"/"} className="nav-link mx-3">
+                            <h4 className="mb-0">Celestial</h4>
+
+                        </Link>
                     </div>
-                    <div>
+                    <div className="d-flex align-items-center">
+                        <Link to={"/login"} className="nav-link mx-3">
+                            Login
+                        </Link>
                         <button className="btn" onClick={darkThemeToggle}>
                             {
                                 darkThemeState ?
@@ -35,7 +42,7 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-            <div style={{ padding: '35px 0' }}></div>   
+            <div style={{ padding: '35px 0' }}></div>
         </>
     )
 }

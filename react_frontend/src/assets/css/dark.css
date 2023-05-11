@@ -26,6 +26,14 @@
     background: var(--color-dark-primary);
 }
 
+.dark-theme .admin-panel .sidebar .nav-item .active {
+    background: var(--color-dark-dark);
+}
+
+.dark-theme .admin-panel .sidebar .nav-item .nav-link{
+    color: var(--color-dark-helper);
+}
+
 /* Login Form*/
 .dark-theme .login-form .form-control {
     background: var(--color-dark-primary);
@@ -44,4 +52,9 @@
     -webkit-box-shadow: 0 0 0px 1000px var(--color-dark-primary) inset;
     transition: background-color 5000s ease-in-out 0s;
     box-shadow: 0 0 0px 1000px var(--color-dark-primary) inset;
+}
+
+.dark-theme .search input {
+    background: var(--color-dark-dark);
+    border: 1px solid var(--color-dark-dark);
 }

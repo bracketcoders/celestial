@@ -1,7 +1,11 @@
 export default function Home() {
     return (
         <>
-        Home
+            <div className="cover-space p-4">
+                <div className="text-center">
+                    Home
+                </div>
+            </div>
         </>
     )
 }
