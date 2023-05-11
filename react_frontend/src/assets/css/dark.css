@@ -1,4 +1,47 @@
+:root {
+    --color-dark-primary: #292929;
+    --color-dark-secondary: #383838;
+    --color-dark-helper: #ADDDD0;
+    --color-dark-light: #EEEEEE;
+    --color-dark-dark: #181818;
+}
+
 .dark-theme {
-    background: #181818;
-    color: white;
+    background: var(--color-dark-dark);
+    color: var(--color-dark-light);
+}
+
+.dark-theme .header {
+    background-color: var(--color-dark-primary);
+    color: var(--color-dark-light);
+    border-bottom: 1px solid #333;
+}
+
+.dark-theme .footer {
+    background: var(--color-dark-primary);
+    border-top: 1px solid #333;
+}
+
+.dark-theme .admin-panel .sidebar {
+    background: var(--color-dark-primary);
+}
+
+/* Login Form*/
+.dark-theme .login-form .form-control {
+    background: var(--color-dark-primary);
+    color: var(--color-dark-light);
+    border: 1px solid var(--color-dark-primary);
+}
+
+.dark-theme .login-form .form-control label {
+    background: var(--color-dark-primary);
+}
+
+.dark-theme input:-webkit-autofill,
+.dark-theme input:-webkit-autofill:hover,
+.dark-theme input:-webkit-autofill:focus {
+    -webkit-text-fill-color: whitesmoke;
+    -webkit-box-shadow: 0 0 0px 1000px var(--color-dark-primary) inset;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: 0 0 0px 1000px var(--color-dark-primary) inset;
 }

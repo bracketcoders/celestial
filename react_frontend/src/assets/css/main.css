@@ -16,4 +16,30 @@
 
 .b-primary {
     background: var(--color-primary);
-}   
+}
+
+.cover-space {
+    min-height: 85vh;
+}
+
+.header {
+    background: var(--color-light);
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+}
+
+.footer {
+    background: var(--color-light);
+    border-top: 1px solid #ddd;
+}
+
+/* Admin */
+
+.admin-panel .sidebar {
+    background: var(--color-dark);
+}
+
+.admin-panel .sidebar .nav-item {
+    color: white
+}

@@ -19,21 +19,23 @@ export default function Header() {
 
     return (
         <>
-            <header className="p-3 d-flex align-items-center justify-content-between" style={{background: "#e4e4e4"}}>
-                <div className="logo">
-                    <h4>Celestial</h4>
-                </div>
-                <div>
-                    <button className="btn" onClick={darkThemeToggle}>
-                        {
-                            darkThemeState ?
-                                <i className="bi bi-moon-stars-fill text-primary"></i> :
-                                <i className="bi bi-brightness-high-fill text-warning"></i>
-                        }
-                    </button>
+            <header className="p-3 header">
+                <div className="container d-flex justify-content-between align-items-center">
+                    <div className="logo">
+                        <h4 className="mb-0">Celestial</h4>
+                    </div>
+                    <div>
+                        <button className="btn" onClick={darkThemeToggle}>
+                            {
+                                darkThemeState ?
+                                    <i className="bi bi-moon-stars-fill text-primary"></i> :
+                                    <i className="bi bi-brightness-high-fill text-warning"></i>
+                            }
+                        </button>
+                    </div>
                 </div>
             </header>
-            <div style={{ padding: '30px 0' }}></div>
+            <div style={{ padding: '35px 0' }}></div>   
         </>
     )
 }

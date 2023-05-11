@@ -1,9 +1,19 @@
+import React from "react"
+import { useNavigate } from "react-router-dom";
+
 export default function Login() {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate("/admin");
+    }
+
     return (
         <>
             <div className="col-12 col-md-6 col-lg-4 p-4 m-auto">
-                <h4 className="mb-3">Login Here!</h4>
-                <form className="col-12">
+                <h4 className="mb-3 text-center">Welcome!</h4>
+                <form className="col-12 login-form" onSubmit={handleSubmit}>
                     <div class="form-floating mb-3">
                         <input
                             type="email"
@@ -21,7 +31,6 @@ export default function Login() {
                         <label for="floatingPassword">Password</label>
                     </div>
                     <div className="my-3">
-
                         <input
                             type="submit"
                             className="btn btn-success btn-lg w-100"
