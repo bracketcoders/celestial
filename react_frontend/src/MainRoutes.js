@@ -1,8 +1,8 @@
 import Home from "./pages/Home"
 import Login from "./auth/Login"
 import Admin from "./admin/Admin"
-import AddSnippet from "./admin/AddSnippet"
-import Snippets from "./admin/Snippets"
+import AddNote from "./admin/AddNote"
+import Notes from "./admin/Notes"
 import Trash from "./admin/Trash"
 import Search from "./admin/Search"
 import Profile from "./admin/Profile"
@@ -21,12 +21,12 @@ export const mainRoutes = [
         element: <Admin />
     },
     {
-        path: "snippets/",
-        element: <Admin component={<Snippets />} />
+        path: "notes/",
+        element: <Admin component={<Notes />} />
     },
     {
-        path: "snippet/add/",
-        element: <Admin component={<AddSnippet />} />
+        path: "note/add/",
+        element: <Admin component={<AddNote />} />
     },
     {
         path: "trash",

@@ -1,0 +1,18 @@
+[
+    {
+        "heading": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "content": "<p>In the example above, the : :-webkit-scrollbar-track selector targets the background of the scrollbar track, while the : :-webkit-scrollbar-thumb selector targets the scrollbar thumb. The : :-webkit-scrollbar-thumb:hover selector targets the scrollbar thumb when it is hovered over with the mouse. <br /><br />You can adjust the background color, border radius, width, and other properties of the scrollbar track and thumb to suit your needs. Additionally, you can use other pseudo-element selectors, such as : :-webkit-scrollbar-corner and : :-webkit-scrollbar-button, to target other components of the scrollbar UI. <br /> <br />It's worth noting that this CSS only applies to webkit-based browsers such as Google Chrome, Safari, and Opera. For Firefox, you can use : :-moz-scrollbar pseudo-elements.</p>"
+    },
+    {
+        "heading": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "content": "<p>In the example above, the : :-webkit-scrollbar-track selector targets the background of the scrollbar track, while the : :-webkit-scrollbar-thumb selector targets the scrollbar thumb. The : :-webkit-scrollbar-thumb:hover selector targets the scrollbar thumb when it is hovered over with the mouse. <br /><br />You can adjust the background color, border radius, width, and other properties of the scrollbar track and thumb to suit your needs. Additionally, you can use other pseudo-element selectors, such as : :-webkit-scrollbar-corner and : :-webkit-scrollbar-button, to target other components of the scrollbar UI. <br /> <br />It's worth noting that this CSS only applies to webkit-based browsers such as Google Chrome, Safari, and Opera. For Firefox, you can use : :-moz-scrollbar pseudo-elements.</p>"
+    },
+    {
+        "heading": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "content": "<p>In the example above, the : :-webkit-scrollbar-track selector targets the background of the scrollbar track, while the : :-webkit-scrollbar-thumb selector targets the scrollbar thumb. The : :-webkit-scrollbar-thumb:hover selector targets the scrollbar thumb when it is hovered over with the mouse. <br /><br />You can adjust the background color, border radius, width, and other properties of the scrollbar track and thumb to suit your needs. Additionally, you can use other pseudo-element selectors, such as : :-webkit-scrollbar-corner and : :-webkit-scrollbar-button, to target other components of the scrollbar UI. <br /> <br />It's worth noting that this CSS only applies to webkit-based browsers such as Google Chrome, Safari, and Opera. For Firefox, you can use : :-moz-scrollbar pseudo-elements.</p>"
+    },
+    {
+        "heading": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "content": "<p>In the example above, the : :-webkit-scrollbar-track selector targets the background of the scrollbar track, while the : :-webkit-scrollbar-thumb selector targets the scrollbar thumb. The : :-webkit-scrollbar-thumb:hover selector targets the scrollbar thumb when it is hovered over with the mouse. <br /><br />You can adjust the background color, border radius, width, and other properties of the scrollbar track and thumb to suit your needs. Additionally, you can use other pseudo-element selectors, such as : :-webkit-scrollbar-corner and : :-webkit-scrollbar-button, to target other components of the scrollbar UI. <br /> <br />It's worth noting that this CSS only applies to webkit-based browsers such as Google Chrome, Safari, and Opera. For Firefox, you can use : :-moz-scrollbar pseudo-elements.</p>"
+    }
+]

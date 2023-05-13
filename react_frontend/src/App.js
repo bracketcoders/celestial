@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { mainRoutes } from "./MainRoutes"
 
-import Header from "./assist/Header"
-import Footer from "./assist/Footer"
 import ScrollToTop from "./assist/ScrollToTop"
 
 import { AuthProvider } from "./auth/AuthContext";
@@ -19,7 +17,6 @@ export default function App() {
   return (
     <>
       <Router>
-        <Header />
         <ScrollToTop>
           <AuthProvider>
             <Routes>
@@ -33,7 +30,6 @@ export default function App() {
             </Routes>
           </AuthProvider>
         </ScrollToTop>
-        <Footer />
       </Router>
     </>
   );

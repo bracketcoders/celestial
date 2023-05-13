@@ -4,9 +4,13 @@ export default function Admin({ component }) {
     return (
         <>
             <div className="container-fluid admin-panel">
-                <div className="row cover-space">
+                <div className="row">
                     <div className="col-3 sidebar p-0">
                         <div className="py-4">
+                            <div className="py-3 px-4">
+                                <h5>Celestial Notes</h5>
+                            </div>
+
                             <form className="search mb-4 px-4">
                                 <input
                                     type="text"
@@ -21,18 +25,18 @@ export default function Admin({ component }) {
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/snippets"} className="nav-link px-4">
-                                        Snippet
-                                    </NavLink>
-                                </li>
-                                <li className="nav-item">
                                     <NavLink to={"/search"} className="nav-link px-4">
                                         Search
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to={"/snippet/add/"} className="nav-link px-4">
-                                        Add Snippet
+                                    <NavLink to={"/notes"} className="nav-link px-4">
+                                        Notes
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink to={"/note/add/"} className="nav-link px-4">
+                                        Add Note
                                     </NavLink>
                                 </li>
                                 <li className="nav-item">
@@ -43,7 +47,7 @@ export default function Admin({ component }) {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-9 content-area p-4">
+                    <div className="col-9 content-area p-0">
                         {
                             !component &&
                             <>

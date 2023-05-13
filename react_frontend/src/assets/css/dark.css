@@ -6,6 +6,10 @@
     --color-dark-dark: #181818;
 }
 
+.dark-theme .b-secondary {
+    background: var(--color-dark-secondary);
+}
+
 .dark-theme {
     background: var(--color-dark-dark);
     color: var(--color-dark-light);
@@ -23,15 +27,20 @@
 }
 
 .dark-theme .admin-panel .sidebar {
+    height: 100vh;
+}
+
+.dark-theme .admin-panel .sidebar {
     background: var(--color-dark-primary);
+    border-right: 1px solid var(--color-dark-secondary);
 }
 
 .dark-theme .admin-panel .sidebar .nav-item .active {
-    background: var(--color-dark-dark);
+    background: var(--color-primary);
 }
 
-.dark-theme .admin-panel .sidebar .nav-item .nav-link{
-    color: var(--color-dark-helper);
+.dark-theme .admin-panel .sidebar .nav-item .nav-link {
+    color: var(--color-dark-light);
 }
 
 /* Login Form*/
@@ -57,4 +66,50 @@
 .dark-theme .search input {
     background: var(--color-dark-dark);
     border: 1px solid var(--color-dark-dark);
+    color: var(--color-dark-helper)
+}
+
+.dark-theme .add-note-form input,
+.dark-theme .notes-search input {
+    background: var(--color-dark-primary);
+    border: 1px solid var(--color-dark-dark);
+    color: var(--color-dark-helper)
+}
+
+
+.dark-theme .notes-area .cover-space {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.dark-theme .notes-area {
+    position: relative;
+}
+
+.dark-theme .create-notes {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-dark-secondary);
+}
+
+.dark-theme .create-notes input {
+    background: var(--color-dark-primary);
+    border: 1px solid var(--color-dark-dark);
+    color: var(--color-dark-helper);
+    padding: 10px;
+    /* border: 0; */
+}
+
+.dark-theme .note-heading {
+    padding: 25px 80px;
+    background: var(--color-dark-secondary);
+}
+
+.dark-theme .note-content {
+    padding: 25px 80px;
+    background: var(--color-dark-primary);
+    border-bottom: 1px solid var(--color-dark-secondary);
 }
