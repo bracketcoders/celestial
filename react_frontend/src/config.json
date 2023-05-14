@@ -1,0 +1,8 @@
+{
+    "api_endpoints": {
+        "notes": "http://localhost:8000/v1/notes/",
+        "notes_create": "http://localhost:8000/v1/notes/create/",
+        "notes_update": "http://localhost:8000/v1/notes/update/",
+        "notes_delete": "http://localhost:8000/v1/notes/delete/"
+    }
+}

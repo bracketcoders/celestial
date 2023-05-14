@@ -1,5 +1,5 @@
 from django.contrib import admin
-from celestialapp.models import Snippet
+from celestialapp.models import Notes
 
 
-admin.site.register(Snippet)
+admin.site.register(Notes)

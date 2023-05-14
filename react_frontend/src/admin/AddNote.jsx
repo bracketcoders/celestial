@@ -1,20 +1,59 @@
 import { useState, useRef } from "react";
 import { Editor } from '@tinymce/tinymce-react';
+import { useNavigate } from "react-router-dom";
+import $ from "jquery"
+import conf from "../config.json"
 
 export default function AddNote() {
     const [inputs, setInputs] = useState({});
     const editorRef = useRef(null);
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         setInputs(inputs => ({ ...inputs, [e.target.name]: e.target.value }))
     }
-    
+
     const handleEditorChange = (name, editorRef) => {
         setInputs(inputs => ({ ...inputs, [name]: editorRef.current.getContent() }));
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        console.log(inputs)
+        $.ajax({
+            url: conf.api_endpoints.notes_create,
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: JSON.stringify(inputs),
+            success: () => {
+                navigate('/notes/');
+            },
+            error: (xhr, textStatus) => {
+                if (textStatus === 'timeout') {
+                    // setErrors("Something Wrong : Code 408")
+                } else if (xhr.status === 0) {
+                    // setErrors("Something Wrong : Code 0")
+                } else if (xhr.status === 404) {
+                    // setErrors("Something Wrong : Code 404")
+                } else if (xhr.status === 401) {
+                    // setErrors("Something Wrong : Code 401 (Unauthorized)")
+                } else if (xhr.status === 400) {
+                    const err = xhr.responseJSON.errors;
+                    err.forEach(element => {
+                        // setErrors(er => ({ ...er, [element.field]: element.message }))
+                    })
+                } else if (xhr.status === 500) {
+                    // setErrors("Something Wrong : Code 500")
+                }
+                else {
+                    // setErrors("Something Wrong : Code Unknown")
+                }
+            }
+        })
+
     }
 
     return (
@@ -45,10 +84,12 @@ export default function AddNote() {
                         }}
                         onEditorChange={() => handleEditorChange("content", editorRef)}
                     />
-                    <input
-                        type="submit"
-                        className="btn btn-success my-3" 
-                    />
+                    <div>
+                        <input
+                            type="submit"
+                            className="btn btn-success my-3"
+                        />
+                    </div>
                 </form>
             </div>
         </>

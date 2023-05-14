@@ -1,8 +1,8 @@
 # snippets/serializers
 from rest_framework import serializers
-from celestialapp.models import Snippet
+from celestialapp.models import Notes
 
-class SnippetSerializer(serializers.ModelSerializer):
+class NotesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Snippet
+        model = Notes
         fields = "__all__"
